@@ -1,0 +1,261 @@
+
+  body
+  {
+    background-color:#3e2723;
+    font-family: 'Poppins',sans-serif;
+    color: #f5e6d3;
+    line-height: 1.6;
+  }
+  P{
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #f5e6d3;
+    color: #3b2a20;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #4b2e1e;
+  }
+  h1,h2,h3{
+    color: #d7a86e;
+    margin-bottom: 15px;
+  }
+  #main-header{
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f5e6d3;
+    background-image: url("https://www.ramstarab.com/wp-content/uploads/2021/03/01-Blog-Coffee-L.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    border-style: double;
+    border-width: 6px;
+    border-color: #d7a86e;
+    animation-name: fadeIn;
+    animation-duration: 2s;
+  }
+  .s-header{
+    text-align: center;
+    background-color: #f5e6d3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 5px;
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #8b5e3c;
+
+  }
+  #main-header h1, #main-header h2, #main-header h3,
+  .s-header h1, .s-header h2, .s-header h3{
+    color: #2b1810;
+  }
+ .n-container > li{
+    display: inline-block;
+    margin-left: 15px;
+ }
+h1{
+    font-style: italic;
+    font-variant: small-caps;
+}
+a{
+    text-decoration:underline;
+    text-decoration-style: dashed;
+    text-decoration-thickness: 2px;
+}
+a:link    { color: #d7a86e; }
+a:visited { color: #c8a27a; }
+
+nav {
+  background-color: #f5e6d3;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 15px;
+}
+
+nav a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:link    { color: #4b2e1e; }
+nav a:visited { color: #8b5e3c; }
+nav a:hover   { color: #f5e6d3; background-color: #6f4e37; }
+nav a:active  { color: #2b1810; background-color: #c8a27a; }
+
+hr{
+    margin: 20px 5%;
+}
+form{
+    border-style: dotted;
+    border-width: 3px;
+    border-color: #d7a86e;
+    padding: 20px;
+}
+.products-container{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product-card{
+    width: 250px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d7a86e;
+    background-color: #f5e6d3;
+    color: #3b2a20;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    animation-name: slideUp;
+    animation-duration: 0.8s;
+    animation-fill-mode: backwards;
+}
+.product-card:nth-child(1){
+    animation-delay: 0s;
+}
+.product-card:nth-child(2){
+    animation-delay: 0.3s;
+}
+.product-card:nth-child(3){
+    animation-delay: 0.6s;
+}
+.coffee-img{
+    float: left;
+    margin-right: 20px;
+    opacity: 0.6;
+}
+
+.coffee-img:hover{
+    opacity: 1;
+}
+hr{
+  clear: both;
+}  
+.product-card:hover{
+    transform: translateY(-10px);
+    background-color: #d7a86e;
+} 
+@keyframes slideUp{
+    from{
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}  
+input, select, textarea{
+    width: 250px;
+    padding: 8px;
+    font-size: 16px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #8b5e3c;
+}
+
+input:focus, select:focus, textarea:focus{
+    background-color: #f5e6d3;
+    border-color: #d7a86e;
+}
+
+input[type="radio"], input[type="checkbox"]{
+    width: auto;
+}
+
+button{
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #6f4e37;
+    color: #f5e6d3;
+}
+
+button:hover{
+    background-color: #d7a86e;
+}
+table, th, td{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4b2e1e;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+}
+
+th{
+    background-color: #8b5e3c;
+    color: #f5e6d3;
+}
+
+tr:hover{
+    background-color: #d7a86e;
+}
+.media-container{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.media-box{
+    padding: 15px;
+    margin: 10px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #d7a86e;
+    text-align: center;
+}
+
+video{
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #8b5e3c;
+}
+
+audio{
+    width: 300px;
+    margin-top: 20px;
+}
+
+iframe{
+    width: 300px;
+    height: 200px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #8b5e3c;
+}
